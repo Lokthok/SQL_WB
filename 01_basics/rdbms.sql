@@ -2,7 +2,9 @@
 
 # Zeilenkommentar
 -- Zeilenkommentar
-/* Blockkommentar */
+/* Mehrzeiliges
+
+Kommentar*/
 
 -- Datenbanken anzeigen
 SHOW DATABASES;

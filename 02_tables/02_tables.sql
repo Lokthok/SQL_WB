@@ -20,7 +20,7 @@ CREATE TABLE IF NOT EXISTS kunde
 (
     k_id INT AUTO_INCREMENT PRIMARY KEY,
     k_name VARCHAR(45),
-    k_alter TINYINT  
+    k_alter TINYINT
 );
 
 -- Tabellen anzeigen

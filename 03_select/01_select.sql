@@ -1,9 +1,12 @@
--- --[ SELECT ]--[ Vorbereitung ]--
-
 \! cls -- clear screen
 
+-- --[ SELECT ]--[ Vorbereitung ]--
+
+-- Tabelle löschen, wenn vorhanden
+DROP TABLE IF EXISTS boo.contacts;
+
 -- 1. Tabelle erstellen mit AUTO_INCREMENT und PRIMARY KEY
-CREATE TABLE contacts (
+CREATE TABLE IF NOT EXISTS boo.contacts (
     id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(100),
     address VARCHAR(255),
@@ -13,6 +16,8 @@ CREATE TABLE contacts (
     state VARCHAR(50),
     city VARCHAR(100)
 );
+
+DESCRIBE boo.contacts;
 
 -- 2. 50 Datensätze einfügen (id wird automatisch vergeben)
 INSERT INTO contacts (name, address, phone, email, age, state, city) VALUES
@@ -70,3 +75,5 @@ INSERT INTO contacts (name, address, phone, email, age, state, city) VALUES
 ('Kai Wagner', 'Schillerplatz 48', '030/111222', 'kai.wagner@example.de', 32, 'Berlin', 'Berlin'),
 ('Tarek Bouzid', 'Rathausplatz 49', '0711/222333', 'tarek.bouzid@example.de', 30, 'Baden-Württemberg', 'Stuttgart'),
 ('Melis Erdem', 'Hauptplatz 50', '040/333444', 'melis.erdem@example.de', 25, 'Hamburg', 'Hamburg');
+
+SELECT * FROM boo.contacts;

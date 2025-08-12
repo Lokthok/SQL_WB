@@ -1,6 +1,6 @@
 \! cls
 
--- UNIQUE / NOT NULL / DEFAULT
+-- Passwort / Verschlüsselung
 
 -- DBs anzeigen
 SHOW DATABASES;

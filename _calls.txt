@@ -10,4 +10,5 @@ source 02_tables\03_tables.sql
 source 02_tables\04_tables.sql
 
 # SELECT
-02_tables\select.sql
+source 03_select\01_select.sql
+source 03_select\02_select.sql

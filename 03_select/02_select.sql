@@ -2,16 +2,28 @@
 
 --  02 SELECT
 
--- SELECT "alles"
--- SELECT
+-- basic
+-- SELECT 
 --     *
 -- FROM boo.contacts
+-- FROM languages.contacts
 -- ;
 
--- SELECT "ID, E-Mail"
-SELECT
-    id,
-    email
+
+-- SELECT 
+--     id,
+--     email
+-- FROM boo.contacts
+-- FROM languages.contacts
+-- ;
+
+SELECT 
+id,
+email,
+city
 FROM boo.contacts
+FROM languages.contacts
+WHERE city = 'Berlin'
 ;
+
 
